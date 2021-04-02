@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Reenie+Beanie&family=Unica+One&display=swap");
+
+:root {
+  --clr-light: #cbc1b6;
+  --clr-medium: #a4b2c3;
+  --clr-primary: #161717;
+  --clr-primary-m: rgba(22, 23, 23, 0.9);
+  --clr-haakjes: #f3efeb;
+  --ff-primary: "Dosis", sans-serif;
+  --ff-titels: "Unica One", cursive;
+  --ff-haakjes: "Reenie Beanie", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.overlay-container-contact {
+  width: 100vw;
+  height: 50vh;
+}
+
+.hamburger-container {
+  width: 100vw;
+  height: 20vh;
+}
+
+#menu-bars {
+  z-index: 150;
+}
+
+.wrapper-contact {
+  display: flex;
+  width: 70vw;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.wrapper-contact .contact-svg {
+  width: 100%;
+  max-height: 8rem;
+  color: var(--clr-primary);
+}
+
+.wrapper-contact .contact-title {
+  font-family: var(--ff-haakjes);
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0 0.3em;
+}
+
+.container {
+  width: 100vw;
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.container .main-img {
+  width: 60vw;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.container .main-img img {
+  max-width: 100%;
+  /*height: auto;*/
+}
+
+.container .main-img .contact-img {
+  max-width: 80%;
+}
+
+.container .body-mg {
+  margin-top: 8rem;
+}
+
+.container .main-body .main-haakje {
+  height: 100%;
+  position: relative;
+  left: 15%;
+  color: var(--clr-haakjes);
+}
+
+.container .main-body .main-title-1 {
+  position: absolute;
+  top: 0rem;
+  left: -3rem;
+  font-size: 2.2rem;
+  font-family: var(--ff-titels);
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+.container .main-body-2 .main-title-1 span {
+  display: none;
+}
+
+.container .main-body .main-address .p1 button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-m);
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container .main-body .main-address .p4 {
+  margin-top: 2em;
+}
+
+.container .main-img .opening-img {
+  position: relative;
+  margin: 3em auto;
+}
+
+.container .main-body {
+  width: 90%;
+  margin: 2em auto;
+  position: relative;
+  display: flex;
+}
+
+.container .main-body .main-haakje-2 {
+  position: relative;
+  left: 15%;
+  color: var(--clr-haakjes);
+}
+
+.container .main-body .main-address {
+  flex: 1;
+  margin-top: 2em;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-m);
+  font-size: 1.3rem;
+  line-height: 1.3em;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .main-body .main-title-2 {
+  position: absolute;
+  top: 0;
+  left: -1.4em;
+  font-size: 2.2rem;
+  font-family: var(--ff-titels);
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+.container .main-body .main-address .p1 {
+  margin-top: 2.5em;
+}
+
+.container .main-body .main-address .p2 {
+  margin-top: 2em;
+}
+
+.container .main-body .main-address .p3 {
+  margin-top: 2em;
+}
+
+.contact-footer {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-footer-horizontal {
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-primary);
+}
+
+.contact-footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0.5em 0.8em;
+  margin: 0.5em 0;
+}
+
+.contact-footer-body {
+  display: flex;
+}
+
+.contact-footer-left {
+  position: relative;
+  /*left: -1rem;*/
+  color: var(--clr-primary);
+}
+
+.contact-footer-left h3 {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.contact-footer-vertical {
+  width: 2px;
+  height: 6em;
+  background-color: var(--clr-primary);
+  position: relative;
+  bottom: 0;
+  left: 10px;
+}
+
+.contact-footer-right {
+  position: relative;
+  left: 2rem;
+  color: var(--clr-primary);
+}
+
+.contact-footer-right .footer-title {
+  font-family: var(--ff-titels);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.contact-footer-right h3 {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.contact-footer-social {
+  width: 8%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-footer-social a i {
+  color: var(--clr-primary);
+  font-size: 1.4rem;
+}
